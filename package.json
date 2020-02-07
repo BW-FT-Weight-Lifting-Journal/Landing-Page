@@ -1,0 +1,22 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page Repository for Weight Lifting Journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BW-FT-Weight-Lifting-Journal/Landing-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BW-FT-Weight-Lifting-Journal/Landing-Page/issues"
+  },
+  "homepage": "https://github.com/BW-FT-Weight-Lifting-Journal/Landing-Page#readme",
+  "dependencies": {
+    "less-watch-compiler": "^1.14.6"
+  }
+}

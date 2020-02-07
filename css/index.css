@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.header {
+  position: absolute;
+  width: 1440px;
+  height: 60px;
+  background: #00A35E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+.header .headerTitle {
+  position: relative;
+  width: 150px;
+  height: 19px;
+  left: 30px;
+  top: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FAFAFA;
+}
+.main {
+  width: 1440px;
+  height: 548px;
+  background: linear-gradient(38.54deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+.main img {
+  width: 509px;
+  height: 424px;
+  left: 78px;
+  top: 120px;
+}
+.main .mainTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.main .mainTitle h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  align-self: flex-start;
+  /* Malachite */
+  color: #00A35E;
+}
+.main .mainTitle p {
+  width: 570px;
+  height: 58px;
+  left: 618px;
+  top: 259px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 162.19%;
+  /* or 29px */
+  letter-spacing: 0.01em;
+  /* Emperor */
+  color: #555555;
+}
+.main .mainTitle .btn {
+  background: #FFFFFF;
+  /* Malachite */
+  border: 1px solid #00A35E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 25%;
+  color: #00A35E;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  align-self: flex-start;
+  padding: 5px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5%;
+  width: 1440px;
+  justify-content: space-around;
+}
+.icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  flex-basis: 30%;
+}
+.icons div i {
+  width: 40px;
+  height: 40px;
+  color: #00A35E;
+  font-size: 40px;
+  margin-left: -11px;
+  margin-bottom: 50px;
+}
+.icons div h2 {
+  width: 394px;
+  height: 28px;
+  left: 48px;
+  top: 792px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.icons div p {
+  width: 394px;
+  height: 42px;
+  left: 48px;
+  top: 836px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* Emperor */
+  color: #555555;
+}
+.bottomSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}

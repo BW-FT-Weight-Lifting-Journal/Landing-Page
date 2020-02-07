@@ -131,21 +131,19 @@ table {
   max-width: 100%;
 }
 .header {
-  position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 60px;
   background: #00A35E;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
+  justify-content: space-between;
 }
 .header .headerTitle {
-  position: relative;
   width: 150px;
   height: 19px;
-  left: 30px;
-  top: 21px;
+  margin-left: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -154,26 +152,50 @@ table {
   text-align: center;
   color: #FAFAFA;
 }
+.header .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  justify-content: space-evenly;
+  width: 360px;
+}
+.header .navbar a {
+  height: 22px;
+  top: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #FAFAFA;
+}
 .main {
-  width: 1440px;
+  width: 100%;
   height: 548px;
   background: linear-gradient(38.54deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
+  padding: 1px;
+  justify-content: start;
 }
 .main img {
-  width: 509px;
+  width: 35%;
   height: 424px;
   left: 78px;
   top: 120px;
+  margin-left: 78px;
+  background: url(.png);
 }
 .main .mainTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
+  width: 40%;
 }
 .main .mainTitle h1 {
   font-family: Roboto;
@@ -181,8 +203,9 @@ table {
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
-  align-self: flex-start;
+  margin-bottom: 10px;
   /* Malachite */
+  align-self: flex-start;
   color: #00A35E;
 }
 .main .mainTitle p {
@@ -190,11 +213,12 @@ table {
   height: 58px;
   left: 618px;
   top: 259px;
+  align-self: flex-start;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 162.19%;
+  margin-bottom: 15px;
   /* or 29px */
   letter-spacing: 0.01em;
   /* Emperor */
@@ -203,26 +227,29 @@ table {
 .main .mainTitle .btn {
   background: #FFFFFF;
   /* Malachite */
+  align-self: left;
   border: 1px solid #00A35E;
-  box-sizing: border-box;
   border-radius: 5px;
-  width: 25%;
+  width: 20%;
+  text-align: center;
+  align-self: flex-start;
+  padding: 10px;
+}
+.main .mainTitle .btn a {
   color: #00A35E;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  align-self: flex-start;
-  padding: 5px;
+  text-decoration: none;
 }
 .icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 5%;
-  width: 1440px;
+  width: 100%;
   justify-content: space-around;
 }
 .icons div {
@@ -230,7 +257,10 @@ table {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  flex-basis: 30%;
+  width: 27%;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 10px;
 }
 .icons div i {
   width: 40px;
@@ -251,6 +281,7 @@ table {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+  color: #555555;
 }
 .icons div p {
   width: 394px;
@@ -270,4 +301,142 @@ table {
   flex-direction: row;
   align-items: center;
   padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  background: #FAFAFA;
+}
+.bottomSection div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: -290px;
+}
+.bottomSection div h1 {
+  width: 454px;
+  height: 42px;
+  left: 125px;
+  top: 1071px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #219653;
+  align-self: flex-start;
+  margin-bottom: 25px;
+}
+.bottomSection div p {
+  width: 646px;
+  height: 57px;
+  left: 125px;
+  top: 1137px;
+  align-self: flex-start;
+  /* Body 2 */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  /* Mine Shaft */
+  color: #2D2D2D;
+}
+.bottomSection div btn {
+  width: 20%;
+  height: 45px;
+  left: 125px;
+  top: 1222px;
+  align-self: flex-start;
+  /* White */
+  padding: 10px;
+  background: #FFFFFF;
+  /* Malachite */
+  border: 1px solid #00A35E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+}
+.bottomSection div btn a {
+  /* Subheader */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Malachite */
+  color: #00A35E;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .bottomSection img {
+    display: none;
+  }
+}
+footer {
+  width: 100%;
+  height: 88px;
+  margin-top: -20px;
+  background: #2D2D2D;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  footer {
+    margin: 0, auto;
+  }
+}
+footer .firstDiv {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-self: center;
+  align-items: center;
+  transform: translate(58%, 0);
+}
+footer .firstDiv p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 5px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+footer .firstDiv .greenText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #00A35E;
+}
+footer .secondDiv {
+  width: 25%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  transform: translate(55%, 0);
+}
+footer .secondDiv i {
+  color: #00A35E;
+}
+footer .secondDiv a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  margin-left: 5px;
+  /* identical to box height */
+  /* Green Jelly */
+  color: #67E6A1;
 }
